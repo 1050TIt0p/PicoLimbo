@@ -432,6 +432,19 @@ jobs:
           pattern: ${{ env.BINARY_NAME }}_*
           merge-multiple: true
 
+      - name: Download library artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./temp-libs
+          pattern: lib-*
+
+      - name: Prepare library assets for release
+        run: |
+          cp ./temp-libs/lib-linux-x86_64-gnu/lib${{ env.LIB_NAME }}.so ./artifacts/lib${{ env.LIB_NAME }}-linux-x86_64-gnu.so
+          cp ./temp-libs/lib-linux-aarch64-gnu/lib${{ env.LIB_NAME }}.so ./artifacts/lib${{ env.LIB_NAME }}-linux-aarch64-gnu.so
+          cp ./temp-libs/lib-macos-aarch64/lib${{ env.LIB_NAME }}.dylib ./artifacts/lib${{ env.LIB_NAME }}-macos-aarch64.dylib
+          cp ./temp-libs/lib-windows-x86_64/${{ env.LIB_NAME }}.dll ./artifacts/${{ env.LIB_NAME }}-windows-x86_64.dll
+
       - name: Create release and upload assets
         uses: softprops/action-gh-release@v2
         env:
