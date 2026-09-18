@@ -4,7 +4,7 @@
 
 **An ultra-lightweight, multi-version Minecraft limbo server written in Rust**
 
-*Supporting all Minecraft versions from 1.7.2 through 26.2*
+*Supporting all Minecraft versions from 1.7.2 through 26.3*
 
 [![GitHub CI](https://img.shields.io/github/actions/workflow/status/Quozul/PicoLimbo/.github%2Fworkflows%2Fci.yml?branch=master)](https://github.com/Quozul/PicoLimbo/actions)
 [![Latest Release](https://img.shields.io/github/v/release/Quozul/PicoLimbo)](https://github.com/Quozul/PicoLimbo/releases)
@@ -31,13 +31,13 @@ in Rust, designed primarily as an AFK or waiting server. Its core focus is on ef
 packets required for client login and maintaining connection (keep-alive) without unnecessary overhead.
 
 While not aiming to replicate every Minecraft server feature, PicoLimbo supports **all Minecraft versions from 1.7.2
-through 26.2**, excluding snapshots.
+through 26.3**, excluding snapshots.
 
 ## Features
 
 ### 🎮 Wide Version Compatibility
 
-Supports all Minecraft versions from **1.7.2 to 26.2** natively, no need for ViaVersion or additional compatibility
+Supports all Minecraft versions from **1.7.2 to 26.3** natively, no need for ViaVersion or additional compatibility
 layers.
 
 ### ⚡ Ultra-Lightweight & Highly Scalable
@@ -64,7 +64,7 @@ MOTD, and more. [View configuration docs](https://picolimbo.quozul.dev/config/in
 
 ### 🌍 Schematic World (Experimental)
 
-Load a custom world from a schematic file and customize spawn location (1.16+ only).
+Load a custom world from a schematic file and customize spawn location (1.13+ only).
 
 ![PicoLimbo.png](docs/public/PicoLimbo.png)  
 *The screenshot shows just a few of the supported Minecraft versions.*
@@ -113,8 +113,7 @@ website.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Quozul/PicoLimbo&type=Date)](https://star-history.com/#Quozul/PicoLimbo&Date)
-
+[![Star History Chart](https://api.star-history.com/chart?repos=quozul/picolimbo&type=date&legend=top-left)](https://www.star-history.com/?repos=quozul%2Fpicolimbo&type=date&legend=top-left)
 ## Contributing
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvement, please submit an issue or
